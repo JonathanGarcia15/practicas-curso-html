@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Realizar Pedido</title>
+</head>
+
+<body>
+
+<a href="index.html">
+	<img src="images/Pastelería Mónica.png" alt="Pastelería Mónica">
+</a> 
+
+<h1>Pastelería Mónica - Realizar Pedido</h1>
+<p>Bienvenido al creador de pasteles. 
+<br>Podrás elegir entre sabores y adornos que tu desees.
+<br>Selecciona la combinación de tu preferencia. </p>
+
+<p>¡Los pedidos en linea los puedes realizar a cualquier hora del día!</p>
+
+<p>Comencemos con el sabor de tu pastel. Puedes seleccionar varios a la vez. </p>
+
+<form action="confirmaPedido.html">
+  <input type="checkbox" id="sabor1" name="sabor1" value="Naranja">
+  <label for="sabor1"> Sabor Naranja $75</label><br>
+  <input type="checkbox" id="sabor2" name="sabor2" value="Limon">
+  <label for="sabor2"> Sabor Limón $75</label><br>
+  <input type="checkbox" id="sabor3" name="sabor3" value="Chocolate">
+  <label for="sabor3"> Sabor Chocolate $75</label><br>
+  <input type="checkbox" id="sabor4" name="sabor4" value="Vainilla">
+  <label for="sabor4"> Sabor Vainilla $75</label><br>
+  
+
+
+<p>Sigamos con la selección de adornos que deseas en tu pastel. </p>
+
+
+  <input type="checkbox" id="adorno1" name="adorno1" value="FrutosSecos">
+  <label for="adorno1"> Frutos Secos $15</label><br>
+  <input type="checkbox" id="adorno2" name="adorno2" value="Fruta">
+  <label for="adorno2"> Fruta Fesca $20</label><br>
+  <input type="checkbox" id="adorno3" name="adorno3" value="Chocolate">
+  <label for="adorno3"> Chocolate $30</label><br>
+  <input type="checkbox" id="adorno4" name="adorno4" value="Clasico">
+  <label for="adorno4"> Decorado clásico (Crema Chantilly) $15</label><br>
+  <input type="checkbox" id="adorno5" name="adorno5" value="Fondant">
+  <label for="adorno5"> Fondant $40</label><br>
+  <input type="checkbox" id="adorno6" name="adorno6" value="MMS">
+  <label for="adorno6"> M&M's $30</label><br>
+  
+<p>Ahora ingresa tus datos para poder entregarte tu producto. </p>
+
+  <label for="fNombre">Nombre Completo:</label><br>
+  <input type="text" id="fNombre" name="fNombre" value=""><br>
+  <label for="phone">Tu Número de Teléfono:</label><br>
+  <input type="tel" id="phone" name="phone" placeholder="" pattern="[0-9]{10}" required><br>
+  <label for="fEmail">Tu Correo Electrónico:</label><br>
+  <input type="email" id="fEmail" name="fEmail"><br>
+  
+<p>Por último, ¿Deseas agregar algún comentario para tu producto? Puedes ser más específico en cómo quieres recibir tu producto. </p>
+  
+  <textarea name="mensajeCliente" rows="10" cols="30"></textarea><br>
+  
+  <br>
+  <input type="submit" value="Realizar pedido">
+</form> 
+
+</body>
+</html> 
